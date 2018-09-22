@@ -7,10 +7,29 @@ Implementation of a Conditional Generative Adversarial Network for learning the 
 Extensive experiments on the ViTac dataset of cloth textures show that the proposed method can produce realistic outputs from other sensory inputs.
 ___
 ### CGAN
+Implementation of a Conditional Generative Adversarial Network. This trains the network to adapt input images from one domain to another. Variables '**in_data_dir**' and '**out_data_dir**' is to be adjusted as the input and output domain respectivly.
+Current layers only allow 256x256 images, use ./images/resize.py to resize the input images.
+
+Dependencies:
+* Python 3.7.0
+* Tensorflow 0.12.0
+* Numpy 1.15.0
+* Scipy 1.1.0
+
+```
+cd cgan
+python cgan.py --mode train
+```
 
 ___
 ### Evaluation
+Implementation of several evaluation metrics to evalute the generated output
+#### Inception Score
 
+#### Structural Similarity Index
+
+
+#### Colour Structural-Similarity Index
 
 ___
 ### Classification
