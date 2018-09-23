@@ -23,13 +23,33 @@ python cgan.py --mode train
 
 ___
 ### Evaluation
-Implementation of several evaluation metrics to evalute the generated output
+Implementation of several evaluation metrics to evalute the generated output. Save images in seperate folders and adjust varialbes in code to locate folder.
 #### Inception Score
-
+```
+cd evaluation
+python inception.py
+```
 #### Structural Similarity Index
-
-
+Compares two datasets to identify the similarity. Plase adjust array in the required order for comparison.
+```
+cd evaluation
+python ssim.py
+```
 #### Colour Structural-Similarity Index
-
+Plase adjust array in the required order for comparison.
+```
+cd evaluation
+python ssim_colour.py
+```
 ___
 ### Classification
+Applies the alexnet network to test the classification of the images. Save all files in seperate folders and genreate test files with class labels. To generate text files, adjust varialbes in 'txt_gen.py' and run:
+```
+cd alexnet
+python txt_gen.py
+```
+Adjust variables in main.py and run:
+```
+cd alexnet
+python main.py
+```
