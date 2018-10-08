@@ -11,8 +11,8 @@ source = os.path.join(os.getcwd(),"source")  # Source Folder
 directory =  os.path.join(os.getcwd(),"dataset")  # Destination folder
 
 # Dimensions of output image, nxn
-H_RESIZE = 227  
-W_RESIZE = 227
+H_RESIZE = 256 
+W_RESIZE = 256
 
 # Loop file in directory
 for file in os.listdir(source):
